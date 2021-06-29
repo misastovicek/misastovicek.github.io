@@ -36,24 +36,19 @@ PS> New-AzDeployment `
     -TemplateParameterFile .\bicep\aks.parameters.json `
     -Location northeurope -Name ExampleAks
 
+Id                      : /subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/providers/Microsoft.Resources/deployments/ExampleAks
 DeploymentName          : ExampleAks
-ResourceGroupName       : rg-mstov-aks
+Location                : northeurope
 ProvisioningState       : Succeeded
 Timestamp               : 6/18/2021 12:51:07 PM
 Mode                    : Incremental
 TemplateLink            :
 Parameters              :
-                          Name                Type                       Value
-                          ==================  =========================  ==========
-                          location            String                     northeurope
-                          name                String                     mstov
-                          cidrBlock           String                     172.16.0.0/23
-                          dockerBridgeCidr    String                     172.20.0.1/16
-                          dockerDnsIp         String                     172.21.0.10
-                          serviceCidr         String                     172.21.0.0/16
-                          aksNodecount        Int                        1
-                          aksNodeSize         String                     Standard_B2ms
-                          publicSSHKey        String                     <REDACTED>
+                          Name             Type                       Value
+                          ===============  =========================  ==========
+                          location         String                     northeurope
+                          name             String                     mstov
+                          publicSSHKey     String                     <REDACTED>
 
 Outputs                 :
                           Name                  Type                       Value
